@@ -1,0 +1,24 @@
+#header{
+    padding: 10px;
+    background-color: #00adbc;
+}
+
+#header nav a{
+    color: white;
+}
+
+#header div.dropdown-menu a{
+    color: black;
+}
+
+#midimage{
+    background-image: url('./blurred-background-coffee-cup-computer-908284.jpg');
+    height: 700px;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+}
+
+/* div#header nav#nvBar{
+    background-color: inherit !important;
+} */
