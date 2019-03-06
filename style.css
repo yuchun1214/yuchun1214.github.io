@@ -15,17 +15,18 @@
     height: 700px;
     /* filter: blur(8px);
     -webkit-filter: blur(1px); */
-    
+    border-bottom: 1px solid white;
 }
 
 #midimage{
-    background-image: url('./business-camera-coffee-1509428.jpg');
+    background-image: url('./blurred-background-coffee-cup-computer-908284.jpg');
     height: 700px;
     background-size: cover;
     background-position: 50% 50%;
     background-repeat: no-repeat;
-    filter: blur(3px);
-    -webkit-filter: blur(3px);
+    /* filter: blur(3px); */
+    /* -webkit-filter: blur(3px); */
+    transition: 2s ease;
     /* position: absolute; */
     
     /* position: relative; */
@@ -40,7 +41,33 @@
     z-index: 2;
     color: white;
     border: 1px solid white;
+    transition: .8s ease;
     /* width: 100%; */
+}
+
+#about{
+    margin-top: 5px;
+    padding: 100px;
+    /* background: #fdfdfd; */
+}
+
+.content{
+    display: inline-block;
+    width: 48%;
+    padding: 10px 5px 0px 10px;
+    margin-top: 50px;
+}
+
+#content-left{
+    border-right: 1px solid lightgrey;
+}
+
+#content-right{
+    float: right;
+}
+
+.content p{
+    line-height: 30px;
 }
 
 /* div#header nav#nvBar{

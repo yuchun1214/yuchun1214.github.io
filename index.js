@@ -25,12 +25,35 @@ var midSizeInit = function(e){
     console.log(jumbotronSize);
 }
 
+var midImageEffect = function(e){
+    var midimage = document.getElementById('midimage');
+    midimage.style.filter = 'blur(3px)';
+    setTimeout(1500,function(){
+        var welcome = document.getElementById('welcome');
+        // $('#welcome').toggle(true);
+        welcome.style.display = '';
+    })
+    
+}
+
 window.addEventListener('resize',function(e){
     midSizeInit(e);
 })
 
 var init = function (e){
     midSizeInit(e);
+    midImageEffect(e);
+}
+
+var modalComponent = function(type){
+    this.component = document.getElementById(type + '-nav-link');
+    this.form = document.getElementById(type+'form');
+    
+
+}
+
+var modal = function(e){
+
 }
 
 window.addEventListener('load',init);
