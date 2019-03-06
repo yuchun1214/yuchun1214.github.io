@@ -14,9 +14,23 @@ var Header = function (langPkg) {
     }
 }
 
-var loadLangPkg = function(){
-    $.ajax({
-        
-    })
+var midSizeInit = function(e){
+    var bodySize = document.querySelector('body').getBoundingClientRect().width;
+    // console.log(bodySize.width);
+    var jumbotronSize = document.getElementById('welcome').getBoundingClientRect().width;
 
+    var remainpx = (bodySize - jumbotronSize);
+    var welcome = document.getElementById('welcome');
+    welcome.style.left = remainpx / 2 + 'px';
+    console.log(jumbotronSize);
 }
+
+window.addEventListener('resize',function(e){
+    midSizeInit(e);
+})
+
+var init = function (e){
+    midSizeInit(e);
+}
+
+window.addEventListener('load',init);
