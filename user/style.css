@@ -1,6 +1,6 @@
 
 #header{
-    padding: 10px;
+    padding: 0px 30px 0px 30px;
     background: #00adbc;
 }
 
@@ -11,3 +11,44 @@
 #header .dropdown-item{
     color: black;
 }
+
+#title{
+    color: white;
+}
+
+#left{
+    border-right: 1px solid lightgrey;
+}
+
+#mid{
+    height: 700px;
+}
+
+.row{
+    height: 100%;
+}
+
+li.nav-item a{
+    color: white;
+}
+
+#header div.headerContent{
+    /* width: 40%; */
+    display: inline-block;
+}
+
+#header div#headerLeft{
+    width: 70%;
+}
+
+#headerRight li{
+    margin-left: 5px;
+    background-color: #00adbc;
+    border-radius: 5px;
+    transition: .3s ease;
+}
+
+#headerRight li:hover{
+    background-color: #0f9ba8
+}
+
