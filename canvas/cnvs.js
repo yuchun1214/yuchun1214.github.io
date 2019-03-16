@@ -64,6 +64,26 @@ function animation(){
     leaf.move();
 }
 
-animation();
+function grass(){
+    context.fillStyle = '#7AE37A';
+    context.fillRect(0,0.5 * canvas.height, canvas.width, 0.5 * canvas.height);
+    var img = new Image();
+    img.src = './src/cat.png';
+    // context.createPattern(img,false);
+    // context.drawImage(img,300,300);
+    img.onload = function () {
+        context.drawImage(img,canvas.width - img.width, canvas.height - img.height);
+    }
+
+    var gras = new Image();
+    gras.src = './src/grass.png';
+    gras.onload = function(){
+        
+    }
+}
+
+grass();
+
+// animation();
 
 // console.log(curveFunction(1,10))

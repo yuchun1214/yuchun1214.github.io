@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>SinoPac</title>
+</head>
+<body>
+    <div id="header">
+        <div id="logo">
+            <img src="./sinopac_logo.png" alt="">
+        </div>
+    </div>
+    <div id="container">
+        <div id="nav">
+            <ul>
+                <li class="item">
+                    <a href="#">個人服務</a>
+                </li><li class="item">
+                    <a href="#">數位金融</a>
+                </li><li class="item">
+                    <a href="#">商業金融</a>
+                </li><li class="item">
+                    <a href="#">法人企業</a>
+                </li><li class="item">
+                    <a href="#">關於永豐</a>
+                </li><li class="item" id="webBank" class="dropDown" onclick="webBankToggle();">
+                    <a href="#" id="webBankText">網路銀行</a>
+                    <div id="dropdownContent" style="display:none;">
+                        <div class="dropDownItem">
+                            <a href="">網路ATM</a>
+                        </div>
+                        <div class="dropDownItem">
+                            <a href="">個人網銀</a>
+                        </div>
+                        <div class="dropDownItem">
+                            <a href="">企業網銀</a>
+                        </div>
+                    </div>
+                </li>
+                <span class="icon" id="fbIcon"></span>
+                <span class="icon" id="enIcon"></span>
+            </ul>
+        </div>
+        <div id="main">
+            <div id="left" class="content">
+                <div id="top">
+                    <span id="mainTitle">
+                        Start to Invest <br>Your Life<br> Now.
+                    </span>
+                </div>
+                <div id="bottom">
+                    <div id="bottom-left">
+                        <div id="subTitleDiv">
+                            <span id="subTitle">
+                                現金回饋DB卡
+                            </span>
+                        </div>
+                        <div id="comment">
+                            <span class="text">
+                                -現金回饋無上限
+                            </span>
+                            <br>
+                            <span class="text">
+                                -提款/轉帳8次免手續費
+                            </span>
+                        </div>
+                    </div>
+                    <div id="bottom-right">
+                        <div id="button">
+                            <span id="makeCard">辦卡去</span>
+                            <img src="./hand-cursor.png" id="hand-cursor">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="right" class="content">
+                <div id="ad">
+                    <img src="./ad1.png" alt="" class="ad" id="ad0">
+                    <img src="./ad2.png" alt="" class="ad" id="ad1">
+                    <img src="./ad3.png" alt="" class="ad" id="ad2">
+                    <img src="./ad4.png" alt="" class="ad" id="ad3">
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="css.js"></script>
+</html>
